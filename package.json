@@ -1,5 +1,5 @@
 {
-  "name": "stud_poker",
+  "name": "question_bank_webapp",
   "version": "0.1.0",
   "proxy": "http://localhost:3000",
   "private": true,
@@ -60,7 +60,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "postinstall": "npm install --legacy-peer-deps",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
