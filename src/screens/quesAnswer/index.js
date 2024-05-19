@@ -24,8 +24,11 @@ const QuesAnswerPage = () => {
         Aos.init({
             duration: 2000,
         });
-        setDisplayData(questionBankData.find((item) => item.categoryId == search?.id));
-    }, []);
+        if (search?.id) {
+            setDisplayData(questionBankData.find((item) => item.categoryId == search?.id));
+            
+        }
+    },[search?.id]);
 
     console.log("displayData", displayData);
     return (
