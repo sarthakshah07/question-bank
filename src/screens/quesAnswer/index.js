@@ -3,7 +3,7 @@ import WrapperComponent from "../../components/WrapperComponent";
 import { Accordion, AccordionDetails, AccordionSummary, Button, CardMedia, Divider, Grid, useMediaQuery } from "@mui/material";
 import { StyledTypography } from "../../utils/services";
 import { CommonColors } from "../../utils/colors/colors";
-import {  useNavigate, useSearchParams } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import { questionBankData } from "../../mockData/questionBankData";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { ArrowBackOutlined } from "@mui/icons-material";
@@ -11,8 +11,8 @@ import Aos from "aos";
 
 const QuesAnswerPage = () => {
     const [searchParams, setSearchParams] = useSearchParams();
-    const search = Object.fromEntries(searchParams.entries());
-    const secondarycolor = CommonColors.secondryColor;
+    const [search, setSearch] = useState(Object?.fromEntries(searchParams?.entries()));
+    const secondarycolor = CommonColors?.secondryColor;
     const [displayData, setDisplayData] = useState([]);
     const isMobile = useMediaQuery('(max-width:900px)');
     const navigate = useNavigate();
@@ -24,8 +24,8 @@ const QuesAnswerPage = () => {
     useEffect(() => {
         Aos.init({
             duration: 2000,
-          });
-        setDisplayData(questionBankData.find((item) => item.categoryId == search.id));
+        });
+        setDisplayData(questionBankData.find((item) => item.categoryId == search?.id));
     }, []);
 
     console.log("displayData", displayData);
@@ -39,7 +39,7 @@ const QuesAnswerPage = () => {
 
                 </Grid>
                 <Grid item xs={12} display={"flex"} justifyContent="center">
-                    <Divider orientation="horizontal" sx={{ backgroundColor: secondarycolor, width: "90%", height: 2 }}  data-aos="fade-right"/>
+                    <Divider orientation="horizontal" sx={{ backgroundColor: secondarycolor, width: "90%", height: 2 }} data-aos="fade-right" />
                 </Grid>
                 <Grid item xs={12} mt={1} display={"flex"} justifyContent={"center"} alignItems={"center"}>
                     <CardMedia
@@ -79,7 +79,7 @@ const QuesAnswerPage = () => {
                                 expanded={expanded === questionId}
                                 onChange={handleChange(questionId)}
                                 sx={{ backgroundColor: "inherit", border: `1px solid ${expanded === questionId ? secondarycolor : "white"}` }}
-                                
+
                             >
                                 <AccordionSummary
                                     expandIcon={<ExpandMoreIcon sx={{ color: expanded === questionId ? secondarycolor : "white" }} />}
