@@ -10,7 +10,6 @@ import MenuList from "@mui/material/MenuList";
 import MyButton from "../MyButton";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import "./_account.css"
-import Swal from "sweetalert2";
 import { logoutUserAction } from "../../redux/auth/middleware";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";

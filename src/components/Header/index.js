@@ -19,7 +19,6 @@ import {
 import { useNavigate } from "react-router-dom";
 // import logoheader2 from "../../assets/images/logoheader.png";
 import ViewHeadlineIcon from '@mui/icons-material/ViewHeadline';
-import Swal from "sweetalert2";
 import { useState } from "react";
 import { useEffect } from "react";
 import AppsIcon from '@mui/icons-material/Apps';

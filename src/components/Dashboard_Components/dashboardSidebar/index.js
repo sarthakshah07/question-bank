@@ -12,7 +12,6 @@ import MenuBookIcon from '@mui/icons-material/MenuBook';
 import BookOnlineIcon from '@mui/icons-material/BookOnline';
 import LogoutIcon from '@mui/icons-material/Logout';
 import { useState } from 'react';
-import Swal from 'sweetalert2';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
