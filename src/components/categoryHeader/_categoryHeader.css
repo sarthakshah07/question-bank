@@ -1,0 +1,20 @@
+/* .MuiTab-textColorPrimary {
+    color: whitesmoke;
+} */
+.css-14y66yo-MuiButtonBase-root-MuiTab-root.Mui-selected {
+    background-color: whitesmoke;
+}
+
+.css-14y66yo-MuiButtonBase-root-MuiTab-root:hover{
+    transition: all .8s ease-out;
+    box-shadow: inset 400px 0px 0px 0px whitesmoke;
+    /* background-color: aqua; */
+}
+.item{
+}
+.listIcon{
+    color: whitesmoke !important;
+}
+.item:hover .listIcon{
+    color: #1976D2 !important;
+}
