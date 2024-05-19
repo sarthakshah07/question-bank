@@ -1,6 +1,5 @@
 import React from "react";
-  import { InputAdornment, TextField } from "@mui/material";
-import AccountCircle from "@mui/icons-material/AccountCircle";
+  import {TextField } from "@mui/material";
 
 
 
@@ -34,16 +33,6 @@ const FieldText = ({
       value={value}
       onChange={onChange}
       onBlur={onBlur}
-      // InputProps={{
-      //   sx: {
-      //     color: "white",
-      //     "& .MuiInputBase-input": {
-      //       color: "white",
-      //     },
-      //   },
-       
-      // }}
-      
       InputLabelProps={inputLabelProps}
       variant={variant}
       name={name}

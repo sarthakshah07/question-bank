@@ -12,7 +12,5 @@ import { useNavigate } from "react-router-dom";
 
 
 
-export const IsMobile = () => {
-   return useMediaQuery('(max-width:900px)');
-}
+
 

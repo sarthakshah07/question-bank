@@ -1,11 +1,6 @@
 import * as React from "react";
-import Box from "@mui/material/Box";
 import CssBaseline from "@mui/material/CssBaseline";
-import Header from "../Header";
-import Footer from "../Footer";
-import "./_wrapperComponent.css"
-import { Grid, Tooltip } from "@mui/material";
-import DashboardSideBar from "../Dashboard_Components/dashboardSidebar";
+import { Grid } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import Aos from "aos";
