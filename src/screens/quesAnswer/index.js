@@ -3,11 +3,9 @@ import WrapperComponent from "../../components/WrapperComponent";
 import { Accordion, AccordionDetails, AccordionSummary, Button, CardMedia, Divider, Grid, useMediaQuery } from "@mui/material";
 import { StyledTypography } from "../../utils/services";
 import { CommonColors } from "../../utils/colors/colors";
-import { useLocation, useNavigate, useSearchParams } from "react-router-dom";
+import {  useNavigate, useSearchParams } from "react-router-dom";
 import { questionBankData } from "../../mockData/questionBankData";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import MyButton from "../../components/MyButton";
-import zIndex from "@mui/material/styles/zIndex";
 import { ArrowBackOutlined } from "@mui/icons-material";
 import Aos from "aos";
 

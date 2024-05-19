@@ -2,35 +2,23 @@ import React, { useEffect, useState } from "react";
 import "./_landingPage.css";
 import WrapperComponent from "../../components/WrapperComponent";
 import {
-  Avatar,
-  Box,
   Card,
   CardContent,
-  CardHeader,
   CardMedia,
-  Chip,
   CircularProgress,
   Divider,
   Grid,
-  IconButton,
   Paper,
   Stack,
   Typography,
-  styled,
   useMediaQuery,
 } from "@mui/material";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useRef } from "react";
-import AboutUs from "../../components/aboutus";
-import MyButton from "../../components/MyButton";
-import FAQS from "../../components/FAQS";
 import { StyledTypography } from "../../utils/services";
-import FieldText from "../../components/fieldtext";
 import { CommonColors } from "../../utils/colors/colors";
-import { color } from "framer-motion";
 import { questionBankData } from "../../mockData/questionBankData";
-import { Padding } from "@mui/icons-material";
 import { useNavigate } from "react-router-dom";
 import CommonToast from "../../components/CommontToast";
 
@@ -38,13 +26,7 @@ import CommonToast from "../../components/CommontToast";
 const secondarycolor = CommonColors.secondryColor;
 const whiteColor = CommonColors.commonTextColor;
 const LandingPage = () => {
-  const handleDelete = () => { };
 
-  //changes
-  const ref1 = useRef(null);
-  const ref2 = useRef(null);
-  const ref3 = useRef(null);
-  const ref4 = useRef(null);
   const current = new Date();
   const navigate = useNavigate();
   const [isLoading, setIsLoading] = useState(true);
