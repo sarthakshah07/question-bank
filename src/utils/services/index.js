@@ -1,4 +1,4 @@
-import { Typography, styled, useMediaQuery } from "@mui/material";
+import { Typography, styled } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
  export const AppNavigate =(str)=>{

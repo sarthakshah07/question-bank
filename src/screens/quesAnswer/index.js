@@ -14,7 +14,6 @@ const QuesAnswerPage = () => {
     const [search, setSearch] = useState(Object?.fromEntries(searchParams?.entries()));
     const secondarycolor = CommonColors?.secondryColor;
     const [displayData, setDisplayData] = useState([]);
-    const isMobile = useMediaQuery('(max-width:900px)');
     const navigate = useNavigate();
     const [expanded, setExpanded] = useState(false);
 
