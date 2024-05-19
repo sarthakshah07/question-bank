@@ -14,7 +14,6 @@ import Swal from "sweetalert2";
 import { logoutUserAction } from "../../redux/auth/middleware";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-// import { Typography } from "@material-ui/core";
 import { useEffect } from "react";
 import { authSelector } from "../../redux/auth/authSlice";
 import { Avatar, Typography } from "@mui/material";
